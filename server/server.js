@@ -1,23 +1,13 @@
 require("dotenv").config()
 const express=require("express")
-const app=express()
-const cors=require("cors")
-const mongoose=require("mongoose")
-
-app.use(express.json())
-app.use(cors())
-
-app.get("/api",(req,res)=>{
-    res.send("hello")
-})
-mongoose.connect(process.env.MONGODB_URI)
-.then(()=>{
-    console.log("DB Connected succesfully")
-})
-.catch(error=>{
-    console.log("Database not connected:",error)
-})
+const app=require("./app")
+const {connectDB}=require("./utils/db")
+const fvrtCityModel=require("./models/favouriteCity")
 const port=process.env.PORT
+
+//DB Connection
+connectDB()
+
 app.listen(port,()=>{
     console.log(`Server connected to ${port}`)
 })

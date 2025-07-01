@@ -1,0 +1,49 @@
+.forecast-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(81, 163, 201, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.day-header {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.temperature {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+.weather-description {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
+}
