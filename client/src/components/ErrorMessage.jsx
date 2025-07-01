@@ -4,7 +4,7 @@ const ErrorMessage = () => {
 
   return (
     <div className='error-message'>
-      City Not Found
+      Searched City Not Found
     </div>
   )
 }
