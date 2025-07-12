@@ -33,7 +33,7 @@ const SearchForm = ({onSearch}) => {
             <input type="text" placeholder='Enter City Name' disabled={isLoading} onChange={(e)=>{
                 setCityName(e.target.value)
             }} value={cityName} className='search-input' aria-label='Search city name' />
-            <button type='submit' disabled={isLoading} className={isLoading?'searching-button':'search-button'}>{isLoading?'searching':'search'}</button>
+            <button type='submit' disabled={isLoading} className={isLoading?'searching-button':'search-button'}>{isLoading?'Searching':'Search'}</button>
         </form>
       
     </div>
